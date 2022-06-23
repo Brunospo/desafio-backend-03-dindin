@@ -15,4 +15,4 @@ app.use('/login', authenticationRouter);
 app.use('/categoria', categoryRouter);
 app.use('/transacao', transactionRouter);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
